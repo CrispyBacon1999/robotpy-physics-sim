@@ -1,0 +1,27 @@
+[drivetrain]
+drivebase.type = "DifferentialDrive"
+drivebase.wheelsize = 6
+
+# Are the gearboxes the same?
+gearbox.match = true
+# If gearboxes are the same, just use .motors, if different, use .left.motors/.right.motors
+gearbox.motors = "NEO"
+# If gearboxes are the same, just use .ratio, if different, use .left.ratio/.right.ratio
+gearbox.ratio = 0.09337
+
+# Drivetrain width, length
+width = 28
+length = 30
+
+[team]
+number = 703
+
+[field]
+width = 323
+height = 629
+ppi = 2
+
+[robot]
+x = 120
+y = 300
+rot = 40

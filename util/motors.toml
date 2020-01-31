@@ -1,0 +1,24 @@
+[NEO]
+name = "Rev Robotics NEO"
+freespeed = 5880
+motorcurve = "NEO.csv"
+
+[Falcon500]
+name = "CTRE Falcon 500"
+freespeed = 6380
+motorcurve = "Falcon500.csv"
+
+[MiniCIM]
+name = "Mini CIM"
+freespeed = 5840
+motorcurve = "MiniCIM.csv"
+
+[CIM]
+name = "CIM"
+freespeed = 5330
+motorcurve = "CIM.csv"
+
+[Vex775Pro]
+name = "VEXpro 775pro"
+freespeed = 18730
+motorcurve = "775Pro.csv"
