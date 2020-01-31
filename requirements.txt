@@ -1,0 +1,4 @@
+numpy
+pynetworktables
+toml
+opencv-python

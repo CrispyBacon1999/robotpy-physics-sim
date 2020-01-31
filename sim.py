@@ -1,12 +1,9 @@
 import toml
 import cv2
 import numpy as np
-import pint
 
 from robot.robot import Robot
 from robot.drivetrains.drivetrains import DifferentialDrive
-
-ureg = pint.UnitRegistry()
 
 config = toml.load(open("physics.toml", 'r'))
 
