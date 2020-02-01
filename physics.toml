@@ -10,8 +10,8 @@ gearbox.motors = "NEO"
 gearbox.ratio = 0.09337
 
 # Drivetrain width, length
-width = 28
-length = 30
+width = 24
+length = 36
 
 [team]
 number = 703
@@ -24,4 +24,4 @@ ppi = 2
 [robot]
 x = 120
 y = 300
-rot = 40
+rot = 90

@@ -23,6 +23,8 @@ class Robot:
         self.length = length
         self.position = position
         self.rotation = rotation
+        self.forward = 0
+        self.turn = 0
         # Give the polar representation of all the points
         self.basepoints = [
             cart2pol(-self.width / 2.0, self.length / 2.0),
@@ -30,6 +32,22 @@ class Robot:
             cart2pol(self.width / 2.0, -self.length / 2.0),
             cart2pol(-self.width / 2.0, -self.length / 2.0),
         ]
+
+    def update(self, dt):
+        forward, turn = self.drivetrain.vector(dt)
+        self.rotation += turn
+        turn = np.radians(self.rotation)
+        x_com = np.cos(turn)
+        y_com = np.sin(turn)
+        # rho, phi = cart2pol(*self.position)
+        # rho += forward
+        # phi += turn
+
+        self.turn = turn
+        self.forward = forward
+        # self.position = pol2cart(rho, phi)
+        self.position[0] += y_com * forward
+        self.position[1] += x_com * forward
 
     @property
     def points(self):
